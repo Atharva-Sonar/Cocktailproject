@@ -58,7 +58,7 @@ document.addEventListener('DOMContentLoaded', () => {
     document.getElementById('orderNow').addEventListener('click', () => {
         if (cart.length > 0) {
             const drinkId = cart[0].id; // Assuming cart[0] is the current drink
-            fetch('http://08:b6:1f:b5:8b:f0/api/order', {
+            fetch('http://192.168.190.13/api/order', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
